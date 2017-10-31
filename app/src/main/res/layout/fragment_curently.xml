@@ -1,0 +1,418 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/fragment_one"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.mroz.mateusz.weatherapplication.ui.CurentlyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hapticFeedbackEnabled="false"
+        tools:context="com.mroz.mateusz.weatherapp.MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="89dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/feels_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="-34dp"/>
+
+                <TextView
+                    android:id="@+id/feels_temperature_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/feels_temperature"
+                    android:textColor="#99ffffff"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="--"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/humidity_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:text="@string/humidity"
+                    android:textColor="#99ffffff"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/wind_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/wind"
+                    android:textColor="#99ffffff"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="--"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/pressure_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:text="@string/pressure"
+                    android:textColor="#99ffffff"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="106dp"
+                android:layout_height="98dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="right"
+                android:layout_row="0"
+                android:layout_rowSpan="2"
+                app:srcCompat="@drawable/sun"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="103dp"/>
+
+            <TextView
+                android:id="@+id/degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="°C"
+                android:textColor="#f2dec4"
+                android:textSize="55sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/temperature"
+                app:layout_constraintRight_toRightOf="@+id/first_hour"/>
+
+            <TextView
+                android:id="@+id/place_name"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="2"
+                android:layout_gravity="center"
+                android:layout_row="1"
+                android:text="@string/localization"
+                android:textColor="#99ffffff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/description_weather"
+                app:layout_constraintLeft_toLeftOf="@+id/temperature"/>
+
+            <TextView
+                android:id="@+id/description_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_row="2"
+                android:text="@string/weather_description"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="right"
+                android:layout_row="0"
+                android:text="--"
+                android:textColor="#f2dec4"
+                android:textSize="55sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/imageView"
+                app:layout_constraintRight_toLeftOf="@+id/degree"
+                tools:layout_editor_absoluteY="103dp"/>
+        </GridLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/barchart_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingTop="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/icons"
+                app:layout_constraintHorizontal_bias="0.28"
+                app:layout_constraintLeft_toLeftOf="@+id/barchart_layout"
+                app:layout_constraintRight_toRightOf="@+id/barchart_layout"
+                app:layout_constraintTop_toTopOf="@+id/barchart_layout"
+                app:layout_constraintVertical_bias="0.327"/>
+
+            <LinearLayout
+                android:id="@+id/icons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/barchart_layout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/barchart_layout"
+                app:layout_constraintRight_toRightOf="@+id/barchart_layout"
+                app:layout_constraintTop_toBottomOf="@+id/bar_chart"
+                app:layout_constraintVertical_bias="0.333">
+
+                <LinearLayout
+                    android:id="@+id/first_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="@+id/bar_chart"
+                    app:layout_constraintRight_toLeftOf="@+id/second_hour"
+                    app:layout_constraintTop_toBottomOf="@+id/bar_chart">
+
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/hail"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="116dp"/>
+
+                    <TextView
+                        android:id="@+id/hour1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="--:--"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintRight_toLeftOf="@+id/third_hour"
+                    app:layout_constraintTop_toBottomOf="@+id/bar_chart">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/hail"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="116dp"/>
+
+                    <TextView
+                        android:id="@+id/hour2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="--:--"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintRight_toLeftOf="@+id/fourth_hour"
+                    app:layout_constraintTop_toBottomOf="@+id/bar_chart">
+
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/hail"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="116dp"/>
+
+                    <TextView
+                        android:id="@+id/hour3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="--:--"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fourth_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/bar_chart"
+                    tools:layout_editor_absoluteX="510dp">
+
+                    <ImageView
+                        android:id="@+id/icon4"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/hail"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="116dp"/>
+
+                    <TextView
+                        android:id="@+id/hour4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="--:--"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fifth_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toRightOf="@+id/fourth_hour"
+                    app:layout_constraintRight_toRightOf="@+id/bar_chart"
+                    app:layout_constraintTop_toBottomOf="@+id/bar_chart">
+
+                    <ImageView
+                        android:id="@+id/icon5"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/hail"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="116dp"/>
+
+                    <TextView
+                        android:id="@+id/hour5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="--:--"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

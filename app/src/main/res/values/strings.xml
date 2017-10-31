@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="error_message">Something is wrong! Please try again!</string>
+    <string name="error_title">Error</string>
+    <string name="ok_button">OK</string>
+    <string name="seven_days">Seven Days</string>
+    <string name="currently">Currently</string>
+    <string name="hourly">Hourly</string>
+    <string name="no_internet_conection">No INTERNET Connection!</string>
+    <string name="warning">Warning</string>
+    <string name="not_found_city">City not found. Please try again!</string>
+    <string name="waiting_info">Please wait...</string>
+    <string name="turn_on_gps">Do you want turn on GPS?</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="turn_off_gps">Do you want turn off GPS?</string>
+    <string name="today">Today</string>
+    <string name="no_data">NO DATA TO DISPLAY!</string>
+    <string name="seven_days_forecast">Seven Days Forecast</string>
+    <string name="_24h_forecast">24h Forecast</string>
+    <string name="temp_20">20°C</string>
+    <string name="min_temp">Min Temperature</string>
+    <string name="max_tempe">Max Temperature</string>
+    <string name="weather_desc">Clear</string>
+    <string name="feels_temperature">Feels temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="localization">Localization</string>
+    <string name="weather_description">Weather Description</string>
+    <string name="temp_25">-25 °C</string>
+    <string name="time">14:00</string>
+    <string name="no_gps_connection">No connection with GPS. Please try again.</string>
+</resources>
