@@ -1,4 +1,4 @@
-package com.mroz.mateusz.weatherapplication.Weather;
+package com.mroz.mateusz.weatherapplication.weather;
 
 
 import android.os.Parcel;

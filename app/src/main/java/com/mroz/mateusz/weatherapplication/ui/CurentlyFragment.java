@@ -20,10 +20,10 @@ import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.formatter.IValueFormatter;
 import com.github.mikephil.charting.utils.ViewPortHandler;
-import com.mroz.mateusz.weatherapplication.Weather.GetHourWeather;
+import com.mroz.mateusz.weatherapplication.weather.GetHourWeather;
 import com.mroz.mateusz.weatherapplication.R;
-import com.mroz.mateusz.weatherapplication.Weather.CurrentWeather;
-import com.mroz.mateusz.weatherapplication.Weather.HourlyWeather;
+import com.mroz.mateusz.weatherapplication.weather.CurrentWeather;
+import com.mroz.mateusz.weatherapplication.weather.HourlyWeather;
 
 import java.util.ArrayList;
 import java.util.List;

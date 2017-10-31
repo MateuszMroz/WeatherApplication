@@ -34,16 +34,16 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 
 import com.eftimoff.viewpagertransformers.ZoomOutSlideTransformer;
-import com.mroz.mateusz.weatherapplication.Weather.AlertDialogFragment;
+import com.mroz.mateusz.weatherapplication.weather.AlertDialogFragment;
 import com.mroz.mateusz.weatherapplication.adapters.FixedTabsPagerAdapter;
-import com.mroz.mateusz.weatherapplication.Weather.GPS_Service;
+import com.mroz.mateusz.weatherapplication.weather.GPS_Service;
 import com.mroz.mateusz.weatherapplication.R;
-import com.mroz.mateusz.weatherapplication.Weather.SearchCity;
-import com.mroz.mateusz.weatherapplication.Weather.CurrentWeather;
-import com.mroz.mateusz.weatherapplication.Weather.DailyWeather;
-import com.mroz.mateusz.weatherapplication.Weather.HourlyWeather;
-import com.mroz.mateusz.weatherapplication.Weather.UpdateCity;
-import com.mroz.mateusz.weatherapplication.Weather.Weather;
+import com.mroz.mateusz.weatherapplication.weather.SearchCity;
+import com.mroz.mateusz.weatherapplication.weather.CurrentWeather;
+import com.mroz.mateusz.weatherapplication.weather.DailyWeather;
+import com.mroz.mateusz.weatherapplication.weather.HourlyWeather;
+import com.mroz.mateusz.weatherapplication.weather.UpdateCity;
+import com.mroz.mateusz.weatherapplication.weather.Weather;
 
 import org.json.JSONArray;
 import org.json.JSONException;

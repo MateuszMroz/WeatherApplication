@@ -27,8 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <service android:name=".Weather.GPS_Service"/>
-        <activity android:name=".Weather.SearchCity"
+        <service android:name=".weather.GPS_Service"/>
+        <activity android:name=".weather.SearchCity"
                   android:screenOrientation="portrait">
 
         </activity>

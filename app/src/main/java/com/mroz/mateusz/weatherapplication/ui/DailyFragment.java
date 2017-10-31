@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.mroz.mateusz.weatherapplication.R;
-import com.mroz.mateusz.weatherapplication.Weather.DailyWeather;
+import com.mroz.mateusz.weatherapplication.weather.DailyWeather;
 import com.mroz.mateusz.weatherapplication.adapters.DailyAdapter;
 
 import java.util.Arrays;

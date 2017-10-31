@@ -1,4 +1,4 @@
-package com.mroz.mateusz.weatherapplication.Weather;
+package com.mroz.mateusz.weatherapplication.weather;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -12,7 +12,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.mroz.mateusz.weatherapplication.R;
-import com.mroz.mateusz.weatherapplication.Weather.UpdateCity;
 import com.mroz.mateusz.weatherapplication.ui.MainActivity;
 
 import java.util.Arrays;

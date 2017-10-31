@@ -1,10 +1,9 @@
-package com.mroz.mateusz.weatherapplication.Weather;
+package com.mroz.mateusz.weatherapplication.weather;
 
 
 import android.os.Bundle;
 import android.os.Parcelable;
 
-import com.mroz.mateusz.weatherapplication.Weather.HourlyWeather;
 import com.mroz.mateusz.weatherapplication.ui.MainActivity;
 
 import java.util.ArrayList;

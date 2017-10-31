@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mroz.mateusz.weatherapplication.R;
-import com.mroz.mateusz.weatherapplication.Weather.DailyWeather;
+import com.mroz.mateusz.weatherapplication.weather.DailyWeather;
 
 public class DailyAdapter extends RecyclerView.Adapter<DailyAdapter.DailyViewHolder> {
     private DailyWeather[] mDailyWeather;

@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mroz.mateusz.weatherapplication.R;
-import com.mroz.mateusz.weatherapplication.Weather.HourlyWeather;
+import com.mroz.mateusz.weatherapplication.weather.HourlyWeather;
 
 import java.util.ArrayList;
 

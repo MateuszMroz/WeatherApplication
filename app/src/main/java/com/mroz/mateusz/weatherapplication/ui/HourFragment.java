@@ -10,9 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.mroz.mateusz.weatherapplication.Weather.GetHourWeather;
+import com.mroz.mateusz.weatherapplication.weather.GetHourWeather;
 import com.mroz.mateusz.weatherapplication.R;
-import com.mroz.mateusz.weatherapplication.Weather.HourlyWeather;
+import com.mroz.mateusz.weatherapplication.weather.HourlyWeather;
 import com.mroz.mateusz.weatherapplication.adapters.HourlyAdapter;
 
 import java.util.ArrayList;
